@@ -2,11 +2,12 @@
 import { Controller, Get, Post, Req, Param, Delete, Patch, Body, ParseIntPipe, Query } from "@nestjs/common";
 import { UserService } from "./users.service";
 
-import { UpdateUserDto } from "src/users/dto/update-users.dto";
+
 
 import { ObjectId } from "mongoose";
 import { User } from "./schemas/users.schema";
 import { CreateUserDto } from "./create-users.dto";
+import { UpdateUserDto } from "./update-users.dto";
 @Controller("user")
 export class UserController {
   constructor(private userService: UserService) {}

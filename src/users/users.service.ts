@@ -4,11 +4,12 @@ import { Inject, Injectable } from "@nestjs/common";
 import { InjectModel } from "@nestjs/mongoose";
 import { Model, ObjectId } from "mongoose";
 
-import { UpdateUserDto } from "src/users/dto/update-users.dto";
+
 import * as bcrypt from "bcryptjs";
 
 import { User, UserDocument } from "./schemas/users.schema";
 import { CreateUserDto } from "./create-users.dto";
+import { UpdateUserDto } from "./update-users.dto";
 // import { User, UserDocument } from './schemas/user.schema';
 
 @Injectable()
